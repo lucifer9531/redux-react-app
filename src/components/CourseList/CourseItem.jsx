@@ -7,7 +7,7 @@ class CourseItem extends Component {
 
         return (
             <li className="course-item">
-                { item.course_name }
+                { item.courseName }
             </li>
         );
     }

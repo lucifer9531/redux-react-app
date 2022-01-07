@@ -10,7 +10,7 @@ class FieldItem extends Component {
                 className={ ['field-item', item.field === curField ? 'current-field' : ''].join(' ') }
                 onClick={ () => changeCourseField(item.field) }
             >
-                { item.field_name }
+                { item.fieldName }
             </span>
         );
     }

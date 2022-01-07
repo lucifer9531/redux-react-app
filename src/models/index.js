@@ -3,9 +3,9 @@ import { axiosGet } from '../utils/http';
 function getCourseFields() {
     return new Promise((resolve, reject) => {
         axiosGet({
-            url: '/v2/get_course_fields',
+            url: '/api/course_field',
             success(data) {
-                resolve(data.result);
+                resolve(data);
             },
             error(err) {
                 reject(err);
@@ -17,9 +17,9 @@ function getCourseFields() {
 function getCourseList() {
     return new Promise((resolve, reject) => {
         axiosGet({
-            url: '/v2/get_courses/all',
+            url: '/api/course_list',
             success(data) {
-                resolve(data.result);
+                resolve(data);
             },
             error(err) {
                 reject(err);

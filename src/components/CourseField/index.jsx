@@ -28,7 +28,7 @@ class Index extends Component {
             <div className="field-wrapper">
                 <FieldItem
                     key={ '-1' }
-                    item={{ field: '-1', field_name: '全部课程' }}
+                    item={{ field: '-1', fieldName: '全部课程' }}
                     curField={ curField }
                     changeCourseField={ () => changeCourseField('-1') }
                 />

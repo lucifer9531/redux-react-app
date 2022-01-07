@@ -9,7 +9,7 @@ const allReducers = combineReducers({
     courseTabList: courseTabListReducer
 })
 
-// reducers 设置用户的基本配置信息
+// reducers 整合全部的 reducers
 const store = createStore(allReducers, {
     courseTabList: courseTabListState
 }, applyMiddleware(ReduxThunk));
